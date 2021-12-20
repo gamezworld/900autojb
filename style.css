@@ -1,0 +1,166 @@
+html, body {
+overflow: hidden;
+background-image: url('img.jpg');
+height: 100%;
+ background-position: center;
+ background-size: cover;
+background-attachment: fixed;
+background-repeat:no-repeat;
+margin: 0;
+height: 100%;
+padding: 0;
+overflow: hidden;
+font-family: sans-serif;
+font-size: 20px;
+font-weight: bold;
+text-align: center;  
+width: 100%;
+overflow: hidden;
+}
+
+
+.loader {
+position: absolute;
+left: 50%;
+top: 70%;
+margin: -75px 0 0 -75px;
+border: 10px solid #1f1e1e;
+border-radius: 50%;
+border-top: 10px solid #044595;
+border-left: 10px solid #044595;
+width: 120px;
+height: 120px;
+animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+0% {
+transform: rotate(0deg);
+}
+
+100% {
+transform: rotate(360deg);
+}
+}
+
+.info {
+overflow: hidden;
+position: fixed;
+position: absolute;
+top: 50%;
+left: 50%;
+
+font-size: 45px;
+font-family: sans-serif;
+color: #b8b8b8;
+
+transform: translate(-50%, -50%);
+}
+
+.j {
+font-size: 15px;
+color: #2F3335;
+}
+.crd{
+			color:white;
+			font-size: 16px;
+			font-family: Almendra Display;
+			font-style:italic;
+			text-shadow: 4px 4px 4px black;
+ }
+  #clock{
+ float:right;
+ margin-right:2.25%;
+ font-weight:bold;
+ font-size:16px;
+  color: white;
+  font-family: Almendra Display;
+			font-style:italic;
+}
+#date {
+ float:left;
+ margin-left:1.25%;
+ font-weight:bold;
+  font-size:16px;
+ color: white;
+ font-family: Almendra Display;
+			font-style:italic;}
+			.hue {
+color:yellow;
+padding:10px;
+border-radius:10px;
+animation:hue 5s linear infinite;
+-webkit-animation: hue 5s linear infinite;
+box-shadow: 0px 0px 50px yellow;
+color:white;
+background:rgba(255,255,0,0.4);
+}
+.hue:hover{
+color:yellow;
+background:transparent;
+}
+@keyframes hue{
+0%{
+filter:hue-rotate(0deg);
+-webkit-filter:hue-rotate(0deg);
+}
+10%{
+box-shadow: 0px 1px 50px yellow;
+}
+0%{
+box-shadow: 1px 1px 50px yellow;
+}
+30%{
+ box-shadow: 1px 0px 50px yellow;
+}
+40%{
+box-shadow: 1px -1px 50px yellow;
+}
+50%{
+box-shadow: 0px -1px 50px yellow;
+}
+60%{
+box-shadow: -1px -1px 50px yellow;
+}
+70%{
+box-shadow: -1px 0px 50px yellow;
+ }
+80%{
+box-shadow: -1px 1px 50px yellow;
+}
+90%{
+box-shadow: 0px 1px 50px yellow;
+}
+100%{
+filter:hue-rotate(360deg);
+-webkit-filter:hue-rotate(360deg);
+ }
+ }
+.content 
+{
+width:80%;
+margin-left:7.5%;
+color:white;
+margin-top:0%;
+font-size:12px;
+text-align:center;
+border-radius:30px;
+padding:20px;
+line-height:10px;
+}
+* {
+box-sizing: border-box;
+}
+/* Create two equal columns that floats next to each other */
+.column {
+float: left;
+width: 45%;
+Padding: 10px;
+height: 100px; /* Should be removed. Only for demonstration */
+}
+/* Clear floats after the columns */
+.row:after {
+content: "";
+display: table;
+clear: both;
+}

